@@ -22,8 +22,8 @@ Some of the initiatives featured in this portfolio include:
 - **Embedded Finance:** Developing widget-based and headless API lending integration models for business partners.
 - **Multi-Lender Initiative:** Building capabilities that connect lending operations with multiple funding partners.
 - **Loan Automation:** Developing configurable loan products, commercial fees, credit assessment, and approval workflows.
-- **Project VOE:** Supporting business process and performance transformation across Customer Fulfilment and Growth & Marketing.
-- **Onboarding Optimisation:** Improving onboarding experiences and addressing customer journey drop-offs.
+- **Project VOE:** Supporting business process and performance transformation across business units.
+- **Onboarding Optimization:** Improving onboarding experiences and addressing customer journey drop-offs.
 
 Detailed case studies will explain the problems, my role, key decisions, delivery approach, and outcomes.
 
@@ -44,13 +44,9 @@ Detailed case studies will explain the problems, my role, key decisions, deliver
 ## How I Work
 
 **Discover** — Understand users, business needs, market opportunities, and constraints.
-
 **Define** — Translate problems into clear product visions, requirements, priorities, and success measures.
-
 **Align** — Bring teams and stakeholders together around outcomes, ownership, and execution plans.
-
 **Deliver** — Work closely with cross-functional teams to build, launch, and improve solutions.
-
 **Measure** — Evaluate performance, learn from results, and identify opportunities for improvement.
 
 ## Let's Connect
