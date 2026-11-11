@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Olatayo Jetawo — Product and Programme Leader building fintech products and leading business transformation.">
+  <title>Olatayo Jetawo | Product & Programme Leader</title>
+  <style>
+    :root {
+      --bg: #090d18;
+      --surface: #111a2b;
+      --text: #f5f7ff;
+      --muted: #a5b0c4;
+      --blue: #65a8ff;
+      --lime: #c4f36b;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    .container { width: min(1100px, 90%); margin: auto; }
+
+    header {
+      padding: 24px 0;
+      border-bottom: 1px solid #ffffff18;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .logo { font-weight: 800; letter-spacing: 1px; }
+    .nav-links { display: flex; gap: 22px; color: var(--muted); font-size: 14px; }
+
+    .hero { padding: 110px 0 90px; }
+    .eyebrow {
+      color: var(--lime);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: clamp(42px, 8vw, 82px);
+      line-height: 1.05;
+      letter-spacing: -4px;
+      max-width: 900px;
+      margin: 22px 0;
+    }
+
+    h1 span { color: var(--blue); }
+    .intro { max-width: 650px; color: var(--muted); font-size: 18px; }
+
+    .actions { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 32px; }
+    .button {
+      display: inline-block;
+      padding: 13px 20px;
+      border-radius: 6px;
+      background: var(--lime);
+      color: #10151c;
+      font-weight: bold;
+    }
+    .button.secondary { background: transparent; color: white; border: 1px solid #ffffff40; }
+
+    section { padding: 65px 0; }
+    .section-label { color: var(--lime); font-size: 12px; letter-spacing: 2px; text-transform: uppercase; }
+    h2 { font-size: clamp(30px, 5vw, 46px); line-height: 1.15; margin: 12px 0 20px; }
+
+    .impact-grid, .project-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      margin-top: 30px;
+    }
+
+    .impact, .project {
+      background: var(--surface);
+      border: 1px solid #ffffff12;
+      padding: 26px;
+      border-radius: 12px;
+    }
+
+    .impact strong { display: block; font-size: 30px; color: var(--blue); }
+    .impact p, .project p, .about-copy { color: var(--muted); }
+    .project h3 { font-size: 22px; margin: 0 0 10px; }
+    .project a { color: var(--lime); font-weight: bold; }
+
+    .about-copy { max-width: 750px; font-size: 17px; }
+    .contact { background: #111a2b; border-radius: 16px; padding: 38px; }
+
+    footer { padding: 30px 0; color: var(--muted); font-size: 13px; border-top: 1px solid #ffffff18; }
+
+    @media (max-width: 650px) {
+      .nav-links { gap: 12px; font-size: 12px; }
+      .impact-grid, .project-grid { grid-template-columns: 1fr; }
+      .hero { padding: 75px 0 55px; }
+      h1 { letter-spacing: -2px; }
+      .contact { padding: 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <nav>
+        <a class="logo" href="#">OJ.</a>
+        <div class="nav-links">
+          <a href="#work">Selected Work</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="eyebrow">Product Strategy · Programme Leadership · Fintech</div>
+      <h1>I build products.<br>I lead programmes.<br><span>I turn complexity into growth.</span></h1>
+      <p class="intro">
+        I'm Olatayo Jetawo, a product and programme leader with 8+ years
+        of experience building fintech products, leading complex initiatives,
+        and transforming business operations.
+      </p>
+      <div class="actions">
+        <a class="button" href="#work">Explore my work ↗</a>
+        <a class="button secondary" href="#contact">Let's connect</a>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="section-label">Selected impact</div>
+      <h2>Building products that move business forward.</h2>
+      <div class="impact-grid">
+        <div class="impact">
+          <strong>₦10bn+</strong>
+          <p>Transaction volume through the Bumpa partner channel. Period to be confirmed.</p>
+        </div>
+        <div class="impact">
+          <strong>₦1bn+</strong>
+          <p>Weekly repayments by a merchant using the headless finance API.</p>
+        </div>
+        <div class="impact">
+          <strong>2 models</strong>
+          <p>Embedded finance integration models: widget and headless API.</p>
+        </div>
+        <div class="impact">
+          <strong>End-to-end</strong>
+          <p>Product strategy, delivery, partner integration, and programme leadership.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container" id="work">
+      <div class="section-label">Selected work</div>
+      <h2>Turning complex challenges into practical solutions.</h2>
+      <div class="project-grid">
+        <article class="project">
+          <h3>01. Embedded Finance</h3>
+          <p>Widget and headless API lending experiences that help partners embed financing into their platforms.</p>
+          <a href="projects/embedded-finance.html">Explore case study ↗</a>
+        </article>
+        <article class="project">
+          <h3>02. Multi-Lender Initiative</h3>
+          <p>Building a multi-lender capability to improve access to funding and capital recycling.</p>
+          <a href="projects/multi-lender.html">Explore case study ↗</a>
+        </article>
+        <article class="project">
+          <h3>03. Loan Automation</h3>
+          <p>Configurable loan products, commercial fees, credit assessment, and approval workflows.</p>
+          <a href="projects/loan-automation.html">Explore case study ↗</a>
+        </article>
+        <article class="project">
+          <h3>04. Project VOE</h3>
+          <p>Business process and performance transformation across Customer Fulfilment and Growth & Marketing.</p>
+          <a href="projects/project-voe.html">Explore case study ↗</a>
+        </article>
+        <article class="project">
+          <h3>05. Onboarding Optimisation</h3>
+          <p>Improving onboarding journeys and addressing friction across the customer experience.</p>
+          <a href="projects/onboarding.html">Explore case study ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="container" id="about">
+      <div class="section-label">A little about me</div>
+      <h2>Strategy meets execution.</h2>
+      <p class="about-copy">
+        I work at the intersection of product, technology, and business.
+        I translate complex problems into clear strategies and actionable
+        requirements, align cross-functional teams, and lead initiatives
+        from discovery through delivery and measurement.
+        My experience spans fintech, lending, payments, APIs, SaaS,
+        and business transformation.
+      </p>
+    </section>
+
+    <section class="container" id="contact">
+      <div class="contact">
+        <div class="section-label">Let's connect</div>
+        <h2>Have a meaningful challenge to solve?</h2>
+        <p class="about-copy">I'm open to conversations about product leadership, programme delivery, fintech innovation, and new opportunities.</p>
+        <div class="actions">
+          <a class="button" href="mailto:Olatayojet@outlook.com">Email me ↗</a>
+          <a class="button secondary" href="https://www.linkedin.com/in/olatayo-jetawo/">LinkedIn ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© 2026 Olatayo Jetawo. Built with purpose.</div>
+  </footer>
+
+</body>
+</html>
