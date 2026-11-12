@@ -1,0 +1,338 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Loan Automation product case study by Olatayo Jetawo. Configurable lending infrastructure, credit assessment and approval workflows.">
+  <title>Loan Automation | Olatayo Jetawo</title>
+  <style>
+    :root {
+      --bg: #090d18;
+      --surface: #111a2b;
+      --text: #f5f7ff;
+      --muted: #a5b0c4;
+      --blue: #65a8ff;
+      --lime: #c4f36b;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Arial, sans-serif;
+      line-height: 1.7;
+    }
+    a { color: var(--lime); text-decoration: none; }
+    .container { width: min(900px, 90%); margin: auto; }
+    header { padding: 24px 0; border-bottom: 1px solid #ffffff18; }
+    .nav { display: flex; justify-content: space-between; gap: 15px; }
+    .logo { color: white; font-weight: bold; }
+    .muted { color: var(--muted); }
+    .hero { padding: 85px 0 60px; }
+    .eyebrow {
+      color: var(--lime);
+      font-size: 12px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    h1 {
+      font-size: clamp(40px, 7vw, 68px);
+      line-height: 1.1;
+      letter-spacing: -3px;
+      margin: 18px 0;
+    }
+    h2 { font-size: 30px; line-height: 1.2; }
+    h3 { font-size: 20px; }
+    .subtitle { font-size: 19px; max-width: 720px; }
+    section { padding: 35px 0; border-top: 1px solid #ffffff18; }
+    .meta, .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 28px;
+    }
+    .grid { grid-template-columns: repeat(2, 1fr); }
+    .panel {
+      background: var(--surface);
+      border: 1px solid #ffffff12;
+      padding: 22px;
+      border-radius: 10px;
+    }
+    .meta strong { display: block; color: var(--blue); }
+    .panel h3 { margin-top: 0; }
+    .panel p { color: var(--muted); }
+    li { margin: 10px 0; color: var(--muted); }
+    .highlight {
+      border-left: 3px solid var(--lime);
+      background: var(--surface);
+      padding: 18px;
+      color: var(--muted);
+      margin: 25px 0;
+    }
+    .step {
+      border-left: 2px solid var(--blue);
+      padding: 5px 0 5px 20px;
+      margin: 20px 0;
+    }
+    .step strong { color: var(--text); }
+    footer {
+      border-top: 1px solid #ffffff18;
+      margin-top: 45px;
+      padding: 30px 0;
+      color: var(--muted);
+    }
+    @media(max-width: 650px) {
+      .meta, .grid { grid-template-columns: 1fr; }
+      h1 { letter-spacing: -2px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a class="logo" href="../index.html">OJ.</a>
+    <a href="../index.html">← Back to portfolio</a>
+  </div>
+</header>
+
+<main class="container">
+
+  <div class="hero">
+    <div class="eyebrow">Product Case Study · Lending Technology</div>
+    <h1>Making lending products configurable, scalable and easier to manage.</h1>
+    <p class="subtitle muted">
+      Building configurable lending infrastructure that enables
+      businesses and financial partners to define loan products,
+      commercial rules, credit assessment criteria, and approval
+      workflows through a reusable platform.
+    </p>
+
+    <div class="meta">
+      <div class="panel">
+        <strong>My Role</strong>
+        Lead Product Manager
+      </div>
+      <div class="panel">
+        <strong>Ownership</strong>
+        Product Vision & End-to-End Scope
+      </div>
+      <div class="panel">
+        <strong>Delivery</strong>
+        MVP Shipped
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div class="eyebrow">01 · The Challenge</div>
+    <h2>Different lending products shouldn't require rebuilding the same capabilities.</h2>
+    <p class="muted">
+      Lending businesses and financial partners have different
+      commercial models, customer segments, risk appetites,
+      and approval requirements.
+    </p>
+    <p class="muted">
+      Configuring and managing these variations can become
+      operationally complex when product rules and workflows
+      are not sufficiently flexible.
+    </p>
+    <p class="muted">
+      The opportunity was to create a configurable lending
+      capability that could support different loan products
+      and operational requirements without treating every
+      new product or partner as an entirely separate build.
+    </p>
+  </section>
+
+  <section>
+    <div class="eyebrow">02 · Product Vision</div>
+    <h2>Move from rigid lending processes to configurable capabilities.</h2>
+    <p class="muted">
+      I led the product vision, strategy, and end-to-end scope
+      for an automation capability designed to make loan
+      product configuration and lending workflows more
+      flexible.
+    </p>
+
+    <div class="highlight">
+      The central product idea was to make key lending rules
+      configurable, allowing the business to support different
+      products and partner requirements through a reusable
+      lending service.
+    </div>
+
+    <div class="grid">
+      <div class="panel">
+        <h3>Configurable Loan Products</h3>
+        <p>
+          Define and configure different loan products
+          according to business and partner requirements.
+        </p>
+      </div>
+      <div class="panel">
+        <h3>Commercial Fee Configuration</h3>
+        <p>
+          Configure commercial fees and product-specific
+          lending parameters.
+        </p>
+      </div>
+      <div class="panel">
+        <h3>Credit Assessment</h3>
+        <p>
+          Configure credit assessment criteria to support
+          different lending propositions.
+        </p>
+      </div>
+      <div class="panel">
+        <h3>Approval Workflows</h3>
+        <p>
+          Configure review and approval workflows to support
+          lending decision processes.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow">03 · Product Experience</div>
+    <h2>How the capability works.</h2>
+    <p class="muted">
+      The MVP brought several important lending configuration
+      capabilities into a more structured product experience.
+    </p>
+
+    <div class="step">
+      <strong>01. Define the loan product</strong>
+      <p class="muted">
+        Set up the loan product and its core parameters
+        according to the intended lending proposition.
+      </p>
+    </div>
+
+    <div class="step">
+      <strong>02. Configure commercial terms</strong>
+      <p class="muted">
+        Define applicable commercial fees and other
+        product-specific rules.
+      </p>
+    </div>
+
+    <div class="step">
+      <strong>03. Define credit assessment requirements</strong>
+      <p class="muted">
+        Configure the assessment criteria used to evaluate
+        applications under the product.
+      </p>
+    </div>
+
+    <div class="step">
+      <strong>04. Configure approval workflows</strong>
+      <p class="muted">
+        Establish the review and approval process that
+        applications must follow.
+      </p>
+    </div>
+
+    <div class="step">
+      <strong>05. Support lending operations</strong>
+      <p class="muted">
+        Make the configured lending proposition available
+        for operational use within the supported service.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow">04 · My Role & Contribution</div>
+    <h2>Leading product definition and cross-functional delivery.</h2>
+    <p class="muted">
+      I owned the product vision and scope, connecting
+      business needs with the requirements needed to
+      deliver the MVP.
+    </p>
+    <ul>
+      <li>Defined the product vision, strategy, scope, and priorities.</li>
+      <li>Created product requirements documents (PRDs) and technical requirements documents (TRDs).</li>
+      <li>Developed risk matrices to identify and communicate product and delivery risks.</li>
+      <li>Created sequence diagrams to clarify system interactions and workflows.</li>
+      <li>Defined partner API contracts and data consent requirements.</li>
+      <li>Conducted market research and contributed to product positioning.</li>
+      <li>Supported go-to-market planning and stakeholder workshops.</li>
+      <li>Coordinated cross-functional stakeholders through product definition and MVP delivery.</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="eyebrow">05 · Delivery & Adoption</div>
+    <h2>From an internal capability to a reusable lending service.</h2>
+    <p class="muted">
+      The MVP was shipped with capabilities for configuring
+      loan products, commercial fees, credit assessment,
+      and approval workflows.
+    </p>
+    <p class="muted">
+      Beyond supporting VendorCredit's lending operations,
+      the capability was designed to support financial
+      partners seeking a white-label lending service.
+    </p>
+
+    <div class="highlight">
+      The strategic value was not simply automating individual
+      tasks. It was creating a configurable foundation that
+      could support multiple lending propositions and partner
+      requirements.
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow">06 · Business Impact</div>
+    <h2>Creating a foundation for operational flexibility and scale.</h2>
+    <ul>
+      <li>Shipped an MVP covering core loan product configuration capabilities.</li>
+      <li>Established configurable commercial fee, credit assessment, and approval workflow capabilities.</li>
+      <li>Created a reusable lending service proposition for internal and potential white-label partner use.</li>
+      <li>Provided a foundation for supporting different lending products and partner requirements.</li>
+    </ul>
+    <p class="muted">
+      Quantitative improvements in processing time, operational
+      efficiency, and credit performance are not included here
+      because verified figures have not yet been established.
+    </p>
+  </section>
+
+  <section>
+    <div class="eyebrow">07 · What This Demonstrates</div>
+    <h2>Thinking in reusable product capabilities, not one-off solutions.</h2>
+    <p class="muted">
+      This initiative demonstrates my ability to identify
+      repeatable business needs and translate them into
+      configurable product capabilities.
+    </p>
+    <p class="muted">
+      It also highlights my experience working across product
+      strategy, lending operations, technical requirements,
+      risk considerations, partner needs, and cross-functional
+      delivery.
+    </p>
+  </section>
+
+  <section>
+    <div class="panel">
+      <div class="eyebrow">Explore more</div>
+      <h2>More product and programme work.</h2>
+      <a href="../index.html">← Return to homepage</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    © 2026 Olatayo Jetawo · Product & Programme Leader
+  </div>
+</footer>
+
+</body>
+</html>
