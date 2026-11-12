@@ -1,0 +1,491 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="How I led an onboarding redesign that simplified the customer journey and improved first-loan activation conversion by 60%.">
+  <title>Onboarding Redesign | Olatayo Jetawo</title>
+
+  <style>
+    :root {
+      --navy: #101b3d;
+      --blue: #2563eb;
+      --lime: #c5f36b;
+      --ink: #172033;
+      --muted: #64748b;
+      --light: #f4f7fb;
+      --white: #ffffff;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      line-height: 1.7;
+      background: var(--white);
+    }
+
+    a { color: inherit; }
+
+    .nav {
+      padding: 22px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--navy);
+      color: white;
+    }
+
+    .brand { font-weight: 800; letter-spacing: .5px; }
+
+    .nav a {
+      text-decoration: none;
+      font-size: 14px;
+      color: #dbeafe;
+    }
+
+    .hero {
+      padding: 90px 8% 75px;
+      background: var(--navy);
+      color: white;
+    }
+
+    .eyebrow {
+      color: var(--lime);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    h1 {
+      max-width: 850px;
+      font-size: clamp(42px, 7vw, 76px);
+      line-height: 1.05;
+      letter-spacing: -3px;
+      margin: 22px 0;
+    }
+
+    .hero p {
+      max-width: 720px;
+      color: #cbd5e1;
+      font-size: 19px;
+    }
+
+    .hero-stat {
+      display: inline-block;
+      margin-top: 28px;
+      padding: 22px 26px;
+      border-radius: 14px;
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.15);
+    }
+
+    .hero-stat strong {
+      display: block;
+      color: var(--lime);
+      font-size: 48px;
+      line-height: 1.2;
+    }
+
+    .hero-stat span {
+      color: #e2e8f0;
+      font-size: 14px;
+    }
+
+    .container {
+      width: min(1100px, 84%);
+      margin: auto;
+    }
+
+    section { padding: 68px 0; }
+
+    h2 {
+      font-size: 32px;
+      letter-spacing: -1px;
+      color: var(--navy);
+      margin: 0 0 18px;
+    }
+
+    h3 { color: var(--navy); }
+
+    .intro {
+      font-size: 19px;
+      color: #475569;
+      max-width: 850px;
+    }
+
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 32px;
+    }
+
+    .metric {
+      padding: 26px;
+      border-radius: 16px;
+      background: var(--light);
+    }
+
+    .metric strong {
+      display: block;
+      font-size: 34px;
+      color: var(--blue);
+      line-height: 1.3;
+    }
+
+    .metric span {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .dark-section {
+      background: var(--light);
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      margin-top: 30px;
+    }
+
+    .step {
+      padding: 24px;
+      background: white;
+      border: 1px solid #e2e8f0;
+      border-radius: 14px;
+    }
+
+    .number {
+      color: var(--blue);
+      font-weight: 800;
+      font-size: 13px;
+      letter-spacing: 1px;
+    }
+
+    .step h3 { margin: 8px 0; }
+
+    .step p {
+      margin-bottom: 0;
+      color: var(--muted);
+    }
+
+    .comparison {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .compare-card {
+      border-radius: 16px;
+      padding: 28px;
+      background: white;
+      border: 1px solid #e2e8f0;
+    }
+
+    .compare-card.highlight {
+      background: var(--navy);
+      color: white;
+    }
+
+    .compare-card.highlight h3 { color: var(--lime); }
+
+    .screen-count {
+      font-size: 54px;
+      font-weight: 800;
+      line-height: 1.2;
+    }
+
+    .compare-card p { color: var(--muted); }
+
+    .compare-card.highlight p { color: #cbd5e1; }
+
+    .visuals {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+      margin-top: 30px;
+    }
+
+    figure {
+      margin: 0;
+      padding: 12px;
+      border: 1px solid #e2e8f0;
+      border-radius: 14px;
+      background: white;
+    }
+
+    figure img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    figcaption {
+      padding: 12px 5px 4px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .result {
+      padding: 34px;
+      border-radius: 18px;
+      background: var(--navy);
+      color: white;
+      margin-top: 30px;
+    }
+
+    .result strong {
+      color: var(--lime);
+      font-size: 44px;
+    }
+
+    .result p { color: #dbeafe; }
+
+    .footer {
+      padding: 35px 8%;
+      background: var(--navy);
+      color: #cbd5e1;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .footer a { color: var(--lime); }
+
+    @media (max-width: 700px) {
+      .metrics, .steps, .comparison, .visuals {
+        grid-template-columns: 1fr;
+      }
+
+      .hero { padding-top: 65px; }
+      h1 { letter-spacing: -2px; }
+      .container { width: 88%; }
+      section { padding: 48px 0; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="nav">
+    <div class="brand">OLATAYO JETAWO</div>
+    <a href="../index.html">← Back to portfolio</a>
+  </nav>
+
+  <header class="hero">
+    <div class="eyebrow">Product transformation · Customer experience · Fintech</div>
+
+    <h1>Turning onboarding friction into business activation.</h1>
+
+    <p>
+      How I led a customer onboarding redesign that simplified the journey
+      from 13 screens to 6 and improved first-loan activation conversion.
+    </p>
+
+    <div class="hero-stat">
+      <strong>+60%</strong>
+      <span>Relative improvement in activation conversion</span>
+    </div>
+  </header>
+
+  <main>
+
+    <section>
+      <div class="container">
+        <h2>The challenge</h2>
+
+        <p class="intro">
+          The previous onboarding experience required customers to navigate
+          13 screens to complete the information and verification steps
+          needed to access credit. The journey was lengthy and made it
+          difficult for customers to understand their progress and what
+          they needed to do next.
+        </p>
+
+        <p>
+          The business needed more than a visual refresh. We needed to
+          reduce customer friction and improve the journey from initial
+          signup to the moment a business became activated by taking its
+          first loan.
+        </p>
+
+        <div class="metrics">
+          <div class="metric">
+            <strong>25% → 40%</strong>
+            <span>Activation conversion rate</span>
+          </div>
+          <div class="metric">
+            <strong>+15 pp</strong>
+            <span>Percentage-point improvement</span>
+          </div>
+          <div class="metric">
+            <strong>60%</strong>
+            <span>Relative conversion improvement</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="dark-section">
+      <div class="container">
+        <h2>My approach</h2>
+
+        <p class="intro">
+          I led the redesign around a simple principle: customers should
+          always understand where they are, what is required of them and
+          how each step brings them closer to accessing credit.
+        </p>
+
+        <div class="comparison">
+          <div class="compare-card">
+            <h3>Previous experience</h3>
+            <div class="screen-count">13</div>
+            <p>More screens, a fragmented journey and less clarity about
+              the remaining onboarding requirements.</p>
+          </div>
+
+          <div class="compare-card highlight">
+            <h3>Redesigned experience</h3>
+            <div class="screen-count">6</div>
+            <p>A shorter, guided experience with clearer stages,
+              visible progress and more actionable instructions.</p>
+          </div>
+        </div>
+
+        <div class="steps">
+          <div class="step">
+            <div class="number">01 / SIMPLIFICATION</div>
+            <h3>Reduced unnecessary steps</h3>
+            <p>
+              Consolidated the experience from 13 screens to 6,
+              reducing the complexity customers faced during onboarding.
+            </p>
+          </div>
+
+          <div class="step">
+            <div class="number">02 / GUIDANCE</div>
+            <h3>Created a clearer journey</h3>
+            <p>
+              Organised requirements into understandable stages,
+              including personal information, business information,
+              phone and BVN verification, and document submission.
+            </p>
+          </div>
+
+          <div class="step">
+            <div class="number">03 / VISIBILITY</div>
+            <h3>Made progress visible</h3>
+            <p>
+              Introduced progress indicators and completion states
+              to help customers understand what they had completed
+              and what remained.
+            </p>
+          </div>
+
+          <div class="step">
+            <div class="number">04 / ACTIVATION</div>
+            <h3>Focused on the outcome</h3>
+            <p>
+              Made the next action clearer and aligned the onboarding
+              experience with the business objective: helping customers
+              progress towards their first loan.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>The redesigned experience</h2>
+
+        <p class="intro">
+          The new interface gave customers a more structured experience,
+          with clear instructions, visible completion status and a
+          straightforward next action.
+        </p>
+
+        <div class="visuals">
+          <figure>
+            <img src="../assets/onboarding-redesign-screen.png"
+                 alt="Redesigned customer onboarding interface">
+            <figcaption>
+              Redesigned onboarding screen showing guided steps and
+              profile completion progress.
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img src="../assets/onboarding-redesign-dashboard.png"
+                 alt="Onboarding performance dashboard">
+            <figcaption>
+              Onboarding performance dashboard used to review
+              funnel progression and activation performance.
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="dark-section">
+      <div class="container">
+        <h2>Business impact</h2>
+
+        <p class="intro">
+          The redesigned onboarding journey delivered a measurable
+          improvement in the conversion of prospective customers
+          into activated businesses.
+        </p>
+
+        <div class="result">
+          <strong>25% → 40%</strong>
+          <h3 style="color:white;">A 60% relative improvement in activation conversion</h3>
+          <p>
+            Activation was defined as a customer taking their first loan.
+            The conversion rate increased by 15 percentage points,
+            representing a 60% relative improvement over the previous rate.
+          </p>
+        </div>
+
+        <p>
+          Beyond reducing the number of screens, the redesign made the
+          customer journey easier to understand and gave customers
+          greater visibility into the steps required to progress.
+          It connected a better user experience to a meaningful
+          business outcome.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>What this project demonstrates</h2>
+        <p class="intro">
+          Product leadership is not just about shipping features.
+          It is about identifying where customers struggle, making
+          deliberate product decisions and connecting improvements
+          in experience to measurable business performance.
+        </p>
+        <p>
+          This project brought together customer experience design,
+          funnel optimisation, product execution and commercial impact.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>OLATAYO JETAWO · PRODUCT & PROGRAMME LEADER</p>
+    <p><a href="../index.html">Return to portfolio homepage</a></p>
+  </footer>
+
+</body>
+</html>
